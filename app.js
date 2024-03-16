@@ -1,11 +1,11 @@
-import express from 'express';
-import { json } from 'body-parser';
+const express = require('express');
+const bodyParser = require('body-parser');
 
 const app = express();
 const PORT = 3000; // You can use any port number
 
 // Middleware to parse JSON requests
-app.use(json());
+app.use(bodyParser.json());
 
 // Basic route for GET request
 app.get('/', (req, res) => {

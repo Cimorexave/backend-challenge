@@ -4,7 +4,8 @@
   "description": "backend discussion app",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon app.js"
   },
   "keywords": [],
   "author": "sina sadeqi",
@@ -15,5 +16,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.2.2",
     "passport": "^0.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
